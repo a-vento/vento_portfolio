@@ -54,6 +54,9 @@ body {
 h1, h4 {
     text-align: center;
 }
+h4 {
+    font-size: 20px;
+}
 
 h2 {
     margin: 20px 0;
