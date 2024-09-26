@@ -36,6 +36,7 @@ body {
     max-width: 600px; /* Limit card width */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     border: 1px solid #e0e0e0; /* Light border */
+    margin-bottom: 3%;
 }
 
 .background-solution-card h2 {
