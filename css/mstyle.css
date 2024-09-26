@@ -1,0 +1,197 @@
+/* General Styles */
+body {
+    font-family: 'Questrial', sans-serif;
+    background-color: #9ed7f9;
+    color: #270586;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #9ed7f9; /* Use rgba for transparency */
+    color: #270586;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+.navbar-brand {
+    color: #270586;
+}
+.nav-link {
+    color: #270586 !important;
+}
+
+.nav-link:hover {
+    color: #03090d !important;
+}
+
+.navbar.scrolled {
+    background-color: #dcdc7f;
+}
+
+/* Home Section Styles */
+.intro {
+    font-size: 2.5rem;
+    color: #270586;
+    padding-top: 20%;
+}
+.mind {
+    color: #270586;
+}
+.lead {
+    color: #894ad1;
+}
+.py-5 {
+    padding-bottom: 0rem!important;
+}
+
+/* Tamarind Section Styles */
+.tamarind {
+    background-color: hsl(218, 83%, 75%); /* Vibrant green for the main section */
+    padding: 60px 20px; /* Increased horizontal padding */
+    margin: 120px 100px; /* Increased top and left/right margins */
+}
+
+.tamarind h1 {
+    font-size: 3rem; /* Main title size */
+    margin-bottom: 20px;
+}
+
+/* Tamarind Container */
+.tamarind-container {
+    padding: 30px;
+    margin: 0 40px; /* Increased left and right margins */
+}
+
+/* Concept Card Styles */
+.concept-card {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.card {
+    max-width: 600px; /* Limit card width */
+    margin: 20px auto; /* Center the card */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Round corners */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid #e0e0e0; /* Light border */
+    font-family: Arial, sans-serif; /* Set font family */
+}
+
+.tamarind-card,
+.fitbit-card {
+    background-color: #6252db; /* Blue card background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+}
+
+.t-card-title {
+    font-weight: bold;
+    color: #eee8ff; /* Card title color */
+}
+
+/* Fitbit Specific Styles */
+.fitbit {
+    background-color: #8ca4eb; /* Soft blue for Fitbit section */
+    padding: 60px 20px; /* Increased horizontal padding */
+}
+
+.fitbit-header {
+    color: #270586;
+    font-size: 2rem;
+}
+
+.fitbit-info,
+.fitbit-insights {
+    color: #0a135a; /* Text color */
+    padding: 20px;
+    margin: 20px 0; /* Vertical margin unchanged */
+    font-size: 200%;
+}
+
+.fitbit-insights{
+    font-size: 1.5rem;
+    color: #310a5a;
+}
+.insight-cards {
+    display: flex;
+    flex-direction: row; /* Stack cards horizontally */
+    justify-content: center; /* Center cards in the container */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    margin: 20px 0; /* Margin around the cards container */
+}
+
+.insight-card {
+    background-color: #c9bbe6; /* Light background for insights cards */
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 8px; /* Round corners */
+    padding: 20px; /* Padding inside the card */
+    margin: 10px; /* Margin between cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 250px; /* Fixed width for equal sizing */
+    height: 150px; /* Fixed height for equal sizing */
+    display: flex; /* Use Flexbox for inner content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+.insight-text {
+    font-size: 1.1rem; /* Adjust text size */
+    color: #270586; /* Text color */
+    text-align: center; /* Center text */
+}
+
+
+
+.list-group-item {
+    background: #a9b8fc;
+    font-size: medium;
+}
+
+
+/* Description Styles */
+.tamarind-desc, .tam-info {
+    margin: 15px 0;
+}
+
+/* Image Styles */
+.img-fluid {
+    max-width: 100%; /* Responsive image */
+    height: auto;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 0.9rem; /* Smaller navbar font on mobile */
+    }
+
+    .tamarind h1 {
+        font-size: 2.5rem; /* Smaller title on mobile */
+    }
+
+    .fitbit-header {
+        font-size: 1.5rem; /* Smaller Fitbit header on mobile */
+    }
+
+    .tamarind-container {
+        padding: 20px;
+        margin: 0 20px; /* Adjusted for mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .tamarind h1 {
+        font-size: 2rem; /* Even smaller title on extra small devices */
+    }
+
+    .tam-info, .tamarind-desc {
+        font-size: 0.9rem; /* Smaller font for descriptions on small screens */
+    }
+}

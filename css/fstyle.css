@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: 'Questrial', sans-serif;
+    background-color: #312A17; /* Darker background for contrast */
+    color: #ffffff; /* Text color */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center text globally */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #312A17(44, 62, 80, 0.9); /* Darker navbar */
+}
+
+.nav-link {
+    color: #ecf0f1 !important; /* Lighter navbar link color */
+}
+
+.nav-link:hover {
+    color: #fff !important; /* Bright hover color for links */
+}
+.navbar {
+    background-color: rgba(49, 42, 23, 0.9); /* Use rgba for transparency */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar.scrolled {
+    background-color: #040301; /* Solid color when scrolled */
+}
+.background-solution-card {
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    margin: 20px auto; /* Center the card with margin */
+    max-width: 600px; /* Limit card width */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid #e0e0e0; /* Light border */
+}
+
+.background-solution-card h2 {
+    color: #312A17; /* Header color */
+    margin-bottom: 10px; /* Space below header */
+}
+
+.tamarind-desc {
+    color: #6c757d; /* Dark gray for description text */
+    margin-bottom: 15px; /* Space below description */
+    font-size: 1rem; /* Font size for description */
+    line-height: 1.5; /* Line height for readability */
+}
+
+
+/* Home Section Styles */
+.tam {
+    color: #312A17;
+}
+.intro {
+    font-size: 2.5rem;
+    color: #312A17;
+    padding-top: 20%;
+}
+
+/* Tamarind Section Styles */
+.tamarind {
+    background-color: #D5C89F; /* Vibrant green for the main section */
+    padding: 60px 0;
+    margin-top: 60px
+}
+
+.tamarind h1 {
+    font-size: 3rem; /* Main title size */
+    margin-bottom: 20px;
+}
+
+/* Tamarind Container */
+.tamarind-container {
+    padding: 30px;
+}
+
+/* Concept Card Styles */
+.concept-card {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.tamarind-card,
+.fitbit-card {
+    background-color: #1a1509; /* Blue card background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.t-card-title {
+    font-weight: bold;
+    color: #ffffff; /* Card title color */
+    font-size: 140%;
+}
+
+/* Fitbit Specific Styles */
+.fitbit {
+    background-color: #1a1509; /* Soft blue for Fitbit section */
+    padding: 60px 0;
+    margin: 60px 0;
+}
+
+.fitbit-header {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.fitbit-info,
+.fitbit-insights {
+    background: #ecf0f1; /* Light background for info sections */
+    color: #22160c; /* Text color */
+    border: #000000 solid 5px;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 25px;
+}
+
+.fitbit-insights {
+    background: #ffffff; /* White background for insights */
+    color: #3e0a05; /* Red color for insights text */
+}
+
+/* Description Styles */
+.tamarind-desc, .tam-info {
+    margin: 15px 0;
+}
+
+/* Image Styles */
+.img-fluid {
+    max-width: 100%; /* Responsive image */
+    height: auto;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 0.9rem; /* Smaller navbar font on mobile */
+    }
+
+    .tamarind h1 {
+        font-size: 2.5rem; /* Smaller title on mobile */
+    }
+
+    .fitbit-header {
+        font-size: 1.5rem; /* Smaller Fitbit header on mobile */
+    }
+
+    .tamarind-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .tamarind h1 {
+        font-size: 2rem; /* Even smaller title on extra small devices */
+    }
+
+    .tam-info, .tamarind-desc {
+        font-size: 0.9rem; /* Smaller font for descriptions on small screens */
+    }
+}

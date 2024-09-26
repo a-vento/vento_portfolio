@@ -1,0 +1,227 @@
+/* Global Styles */
+body {
+    font-family: 'Questrial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Homepage */
+.homePage {
+    background-color: black;
+    color: white;
+}
+
+.intro {
+    font-size: 2.5rem;
+    padding-top: 20%;
+    margin-left: 10%;
+    text-align: left;
+}
+.small-photo {
+    padding-top: 15%;
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    margin-left: 30%; 
+    margin-right: auto; 
+}
+
+/* Nav */
+.navbar {
+    background-color: black;
+}
+
+.nav-link {
+    color: white;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* About Styling */
+.about {
+    margin-top: 220px; 
+    padding: 10px;
+}
+
+#about-text {
+    font-size: 30px;
+}
+
+h1, h4 {
+    text-align: center;
+}
+
+h2 {
+    margin: 20px 0;
+}
+.red-text {
+    color: rgb(199, 84, 84);
+}
+
+.timeline {
+    margin: 0 auto;
+}
+
+.timeline-content {
+    background-color: #022009;
+    padding: 15px;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+
+/* Projects Styling */
+.projects {
+    padding: 5%;
+}
+
+.gradient-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: linear-gradient(71deg, #260331, #6a0fa7);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(140, 4, 4, 0.3);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.card-description {
+    color: hsla(0, 0%, 100%, 0.8);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .intro {
+        font-size: 1.5rem;
+        padding-top: 30%;
+        width: 90%;
+    }
+
+    .about {
+        margin-top: 150px; 
+    }
+    .small-photo {
+        width: 100%; 
+        height: auto; 
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+    .tcontainer {
+        width: 100%; 
+        height: auto; 
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+}
+
+.g-container{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    max-height: 600px;
+}
+.timeline {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    height: 10%;
+    width: 100%;
+    padding-left:5%;
+    padding-right: 5%; 
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.tcontainer{
+    grid-column: 2;
+    overflow: scroll;
+    border: solid 1px white;
+    max-height:10px;
+    grid-row: 2;
+}
+.timeline-box {
+    position: relative;
+    background-image: linear-gradient(45deg, #b62020, #fe2e2e, #fe8181, white);
+    width: 3px;
+    height: 100%;
+}
+.timeline-content {
+    box-shadow: 5px 5px 10px white, -5px -5px 10px white;
+}
+.timeline-component{
+    margin: 3%;
+}
+.timeline-component:hover {
+    background-color: #0d6e61;
+}
+.main-box {
+    opacity: 0;
+}
+.timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #b62020, #fe2e2e, #fe8181, white);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+.g-container{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    max-height: 600px;
+}
+.tcontainer{
+    grid-column: 2;
+    overflow: scroll;
+    border: solid 1px white;
+    max-height: 30%;
+    grid-row: 2;
+}
+
+.bg-green-box {
+    background-color: #2e7d32; /* Adjust this color if needed */
+    color: white;
+}
+
+.fitbit-header {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.fitbit-info {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.fitbit-t-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.shadow {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
